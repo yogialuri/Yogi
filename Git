@@ -1,0 +1,65 @@
+			Helpful GIT Commands:
+
+Initialize Local Git Repository:
+
+	git init
+
+
+Adds all files in local Source Directory:
+
+	git add . (or)
+	git add --all
+
+
+Removes Specific Files:
+
+	git rm --cached filename.sh
+
+
+Shows all files to be Commited:
+
+	git status
+
+
+Creates the connection to where you are pushing - repository:
+
+	git remote add localbranchname
+
+
+Associate a local and remote branch:
+
+	git push --set-upstream origin remotebranchname
+
+
+Create a local branch and switch to it:
+
+	git checkout -b localbranchname / remotebranchname
+
+
+Making changes:
+
+	git commit -a -m 'made a change'  (or)
+	git commit -am "made a change"   (or)
+	git commit -m "made a change"
+
+Branch renaming:
+
+	git checkout oldname
+	git branch -m oldname newname
+
+Merging changes:
+
+	git checkout master / branch (you want to merge to)
+
+eg:   git checkout feature branch
+
+
+Show remote repositoris:
+
+	git remote
+	git remote -v
+
+Also refer to .git/config
+
+
+-------------   Will add More soon ------------------
