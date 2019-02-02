@@ -1,0 +1,26 @@
+				DevOps:
+
+- Requirement analysis
+- Design
+- Coding
+- Build
+- QA
+- Deploy
+
+
+		Dev + Ops
+
+	End to End Automation
+
+- Using Continuous integration and Continuous Deployment Pipelines
+
+- Pipelines are stages that performs set of tasks for build and deploy
+
+		
+		CI           Jenkins
+	Code <------------------------------> Deployable Artifact
+
+- Develops build a software with conyinuous integration pipeines, Deployable artifact is generated and pushed to artifactory, which is universal artifact repository.
+
+	
+
