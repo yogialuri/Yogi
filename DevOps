@@ -22,5 +22,72 @@
 
 - Develops build a software with conyinuous integration pipeines, Deployable artifact is generated and pushed to artifactory, which is universal artifact repository.
 
+
+- Deveps take the depoyable artifact and deploy with continuous deployment pipelines.
+
+
+Continuous Integration:
+
+- Developer works n a local dev evnironment, the SCM system is GitHub/Bit Bucket, where source code is stored. 
+
+- Developer commits and pushes code to GitHub where it auto triggers the CI Pipeline, the code is then downloaded from GitHub.
+
+_ It is build using Maven (POM.xml), MS BUild or Gradle etc ... based on technology you use.
+
+- unit tests are run based on the technlogy like JUnit or NUnit etc.. 
+
+- The Binaries are Packaged :
+
+	eg: Jar, War, Ear, Zip, Msi
+
+- And the package is published to artifactory management system which is Jfrog artifactory or Nexus etc...
+
+- Code scan is run using SonarQube pr ADSF scan.
+
+- Optionally there is a trigger to Deploy to dev.
+
+- The CI pipeline invokes the Continuous Deployment Pipeline and the artifact is deployed to the Linux or Windows Target Server. 
+
+Continuous Deployment:
+
+- In this case this is more of DevOps operations, DevOps operations team writes the automation code.
+
+- They can operate in the local Dev Environment or IDE of their choice. 
+
+- They stil have to work with the Source Code Managemnent System, which is GitHub and they store the Automatin code + the Continuous delivery meta files.
+
+- When a DevOps engineer commits and pushes code to GitHub auto triggers Continuous Deployment pipeline, Which is combination of Jenkins and Maven POM.xml for Java projects.
+
+- The Deployment happens through the Ansible Tower.
+
+- The first stp is ready artifact from Jfrog.
+
+- Now you need to move the artifacts from Dev to next environment.
+
+- We have a concept of Gating, where an approver used to approve the movement of Artifact from Dev to Higher Stages. 
+
+- Once the approval is done the artifact is deployed to any LLE (Lower Level Environments) through Ansible, functional tests can be run against the artifact. 
+
+- After LLE the artifact can be moved to production through a gated approval. 
+
+
+
+Overall flow for Jenkins:
+
+	- Prebuild
+	- Build
+ 	- Post Build
+
+- Approver once again approves the artifact to move to Production.
+
+- Deployment happens to production using Ansible.
+
+	------- DevOps  --------
+- Maximize the time spent colaborating with the business on Ideas.
+- Code/Test/Deploy is faster using Agile Methdolagy.
+- Code and solution can always be validated and automated.
+- Constantly able to build out new business features frequently.
+- Features / Code are always "Production ready".
+ 
 	
 
