@@ -62,4 +62,73 @@ Show remote repositoris:
 Also refer to .git/config
 
 
--------------   Will add More soon ------------------
+get data from remote:
+
+	git fetch remote -name
+
+Pushing to remotes:
+
+	git push origin master
+	git push localbranchname master
+	git push
+
+Pushing to remote branches:
+	
+	git push origin localbranchname
+	git push (connector) localbranchname
+	git push localbranchname remotebranchname
+
+Checkout Remote Branches:
+
+	git checkout -b hotfix origin/localbranchname
+
+Tracking Branches:
+
+	git checkout --track origin/featurebranch
+	git checkout featurebranch
+
+Deleting Remote Branches:
+
+	git push origin --delete remotebranchname
+
+Deleting Local Branch:
+
+	git branch -d localbranchname
+
+Fetch al remote Branches:
+
+	git branch -v -a
+
+Hard reset to Masrter:
+
+	git fetch origin && git reset --hard origin/master && git clean -f -d
+
+
+		GIT WorkFlow:
+
+- Fetch and Merge changes from the remote
+- create a branch to work on a new project feture
+- Develop the feature on your branch and commit your work
+- Fetch and merge from the remote again (in case new commits were made while you were working)
+- Push your branch up to the remote for review.
+
+Undo a merge:
+
+	- ON CLI: git merge --abort
+	          git reset --hard
+
+
+Git Push: git push origin <filename>
+
+
+- git clone -> creates a local copy of a remote
+- git remote -v -> lists a git project remotes
+- git fetch -> fetches work from remote into the local copy (repo)
+
+- git merge origin/master merges origin/master into your local branch
+
+- git push origin <branch name> pushes local branch into the origin
+
+Merge Conflicts
+
+
