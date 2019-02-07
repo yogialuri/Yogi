@@ -1,0 +1,40 @@
+			Linux Intrduction
+			------------------
+
+- Linux is free and Open Source Operating System.
+- Deveoped by Linus Torvalds.
+- Its platform independent.
+
+- Its just like Windows XP, Windows 7 or 8 etc..
+
+- Linux Distributions or Flavours:
+
+	RHEL
+	SUSE
+	Ubuntu
+	Fedora
+	Debian
+	CentOS
+
+- The top-most directory is the root directory, also called as Slash.
+- or simple /
+
+- Under the root there are several subdirectories :
+
+	/home
+	/root
+	/var
+	/etc
+	/opt
+	/temp
+	/boot
+	/lib
+	/usr
+	/bin
+	/mnt
+
+Operating Syste: A group of programs and functions, that provides basic functionality on a computer. 
+
+Boot: The process by which the computer is powered on.
+
+
