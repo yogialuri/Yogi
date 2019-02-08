@@ -99,10 +99,10 @@ mkdir
 
 ls -l 
 
-l
-t
-t
-l
+
+
+
+
 Owner rwr = 4+2+1 = 7
 Group r-x = 4+0+1 = 5
 other r-x = 4+0+1 = 5
