@@ -37,4 +37,76 @@ Operating Syste: A group of programs and functions, that provides basic function
 
 Boot: The process by which the computer is powered on.
 
+Commands to Practice: 
+	
+	Pwd
+	cd
+	cd ~
+	cd ..
+	
+Listing files inside a directory:
+	
+	ls -l
+	ls -ld
+	s -a
+	ls -f
+	ls -lt
+	ls -lh
+	ls -lR
+	
+	tree
 
+	cp -p source destination
+	cp -R source_dir destination_dir
+
+	mv file1 file2
+	rm -i filenae
+	rm -R dir-name
+	rm -rf dir-name
+	rmdir dir-name
+	mkdir dir-name
+	
+	tuch filename
+
+	chmod
+
+echo "Hello World"
+
+
+man
+
+dpkg -l
+
+hostname
+
+passwd
+
+whoami
+
+top
+
+ps
+
+find /var/www -name 'yogi'
+
+grep
+
+head
+
+tail
+
+mkdir
+
+ls -l 
+
+l
+t
+t
+l
+Owner rwr = 4+2+1 = 7
+Group r-x = 4+0+1 = 5
+other r-x = 4+0+1 = 5
+
+chmod 755 test
+
+  
