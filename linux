@@ -1,5 +1,7 @@
-			Linux Intrduction
+	
+
 			------------------
+Linux Introduction :
 
 - Linux is free and Open Source Operating System.
 - Deveoped by Linus Torvalds.
@@ -21,7 +23,7 @@
 
 - Under the root there are several subdirectories :
 
-	/home
+	/home 
 	/root
 	/var
 	/etc
@@ -39,51 +41,53 @@ Boot: The process by which the computer is powered on.
 
 Commands to Practice: 
 	
-	Pwd
-	cd
-	cd ~
-	cd ..
+	Pwd - Present working directory
+	cd - Change directory
+	cd ~ 
+	cd ..Moves one directory back
 	
 Listing files inside a directory:
 	
-	ls -l
-	ls -ld
+	ls -l - Long listing ls is a shell command that lists files and directories within a directory. Displaying file type, permissions, owner, size, date of creation, and file names
+	ls -ld 
+
 	s -a
 	ls -f
 	ls -lt
 	ls -lh
 	ls -lR
 	
-	tree
+	tree - Display directory paths and optionally files in each subdirectory
 
-	cp -p source destination
-	cp -R source_dir destination_dir
+	cp -p source destination - Copy 
+	cp -R source_dir destination_dir - copy recrusive
 
-	mv file1 file2
-	rm -i filenae
-	rm -R dir-name
-	rm -rf dir-name
-	rmdir dir-name
-	mkdir dir-name
+	mv file1 file2 - Move from file name 1 to file name 2 
+	rm -i filenae  - Remove the file name 
+	rm -R dir-name - Remove the directory
+	rm -rf dir-name - 
+	rmdir dir-name - Remove the diretory
+	mkdir dir-name - create directory
 	
-	tuch filename
+	tuch filename - Create,change and modify the timestamps of a file
 
-	chmod
+	chmod - Change mode 
 
 echo "Hello World"
 
 
-man
+man - User manul in liux
 
-dpkg -l
+dpkg -l - Install,remove and provide information about deb packages.
 
-hostname
 
-passwd
+hostname - Name given for computer
 
-whoami
+passwd - Password 
 
-top
+whoami -User name of the current user
+
+top -The top command allows users to monitor processes and system resource usage .... On a single core system, a load average of 0.4 means the system is doing ...
 
 ps
 
