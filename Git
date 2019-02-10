@@ -1,4 +1,25 @@
+- Git is a Distributed Version Control System.
+	. In this situation everybody has a local repository.
+- SVN is Central Version control System.
+	. a central VCS is located in one place.
+
+
+
+
 			Helpful GIT Commands:
+
+- Set Config Values:
+
+	git config --global user.name "Vinay"
+	git config --global user.email "someemail"
+
+These are the global values to check who made the changes or code changes.
+
+To check the config values:  git config --list
+
+- git config is the first verb or action that we use.
+
+
 
 Initialize Local Git Repository:
 
