@@ -25,15 +25,15 @@ Linux Introduction :
 
 	/home 
 	/root
-	/var
-	/etc
-	/opt
-	/temp
-	/boot
-	/lib
-	/usr
-	/bin
-	/mnt
+	/var - 
+	/etc - configuration file
+	/opt - Installation of add-on application software packages
+	/temp - temporary files or directories that sre preserved between system reboots
+	/boot - Directory holds files used in booting thr operating system.
+	/lib -library files directory which contains all helpful library files
+	/usr -
+	/bin -It contains essential binary files also for booting .commonly used commands cp,mv,rm,cat,ls
+	/mnt - Mounting specifally for mounting storage devices,
 
 Operating Syste: A group of programs and functions, that provides basic functionality on a computer. 
 
@@ -51,7 +51,7 @@ Listing files inside a directory:
 	ls -l - Long listing ls is a shell command that lists files and directories within a directory. Displaying file type, permissions, owner, size, date of creation, and file names
 	ls -ld 
 
-	s -a
+	s -a/var
 	ls -f
 	ls -lt
 	ls -lh
