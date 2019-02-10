@@ -1,0 +1,114 @@
+Date : 02/10/19
+
+Continuous Integration:
+
+1) Develper works in a local dev enviornment ,the SCM System GitHub/Bit bucket wwhere source code is stored.
+
+Query) GitHub/Bit bucket both are same 
+
+
+2) Developer commits and pushes code to GitHub where it auto triggers the CI pipe line ,the code is then downloaded from Github
+
+Query) What is Piple line,who will write the pipeline,If devops engineer writes the pipeline how do you identify it is pipleline and what it contains really.
+
+3) It is build using Maven (POM.xml) ,MS Build or Gradle etc..based on technology use 
+
+Query) No clue about this sentence ,Is the sequence of steps after Jenkins autoriggers .Need more clarity of the sentence. 
+
+4) Unit tests are run based on the technology like Junit or Nunit etc..
+
+
+Query) As per my knowledge Junit will be used for Java applications, what about .net and what is Nunit means
+
+5) The Binaries are packaged 
+eg: Jar,war - Java 
+    zip -.Net
+    Msi -?
+    Ear -?
+    query) please list out all the binaries for java and .net application
+
+6) Package is Published to artifactory management system which is Jfrog artifactory or Nexus etc..
+
+Query) Package Publishement to artifactory management is automated if auotmated how it works   
+
+7) Code scan is run using sonarqube pr ADSF scan
+
+Query) As per my knowledge who will perform this task and why you required some idea on code review kind of tool
+
+8) Optionally there is a trigger to Deploy to dev.
+
+Query) Is it reverse like Prod ->QA and QA-> Devway instead of dev to QA/stage, QA to Production sequence 
+
+9) Continuous Integration (CI) Invokes the Continuous Deployment (CD) Pipeline and the artiifcat is deployed to Linux or windows Target server 
+
+Query) CI Pipeline and CD pipeline are same or differenet
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Continuous Deployment :
+
+1) In this case this is more of devops operations,Devops operations team writes the automation code.
+
+2) They can Operate in the local Dev enviornment or IDE of their choice.
+                                                                                Query) What is the differnece between local dev or Integrated devolpemnet enviornment (IDE) 
+       Devops engineer requires local enviornment - silly question - YES ignore if not more inputs required 
+
+3) They Still have to work with the source code management system,which is Github and they store the automation code + Continous delivery
+
+Query) If devops eng works in Github there is chance of mistakes ,lose of data in central repository and other implications . What is the best practices follow in Org.Ideally devops eng should have local env and write the automation code and then push to Github.This is all my assumption only.
+
+4) When Devops eng commits and pushes code to Github auto triggers continous deplpyment pipeline, which is combination of Jenkins and Maven (POM.xml) for Java projects.
+
+Query) What is the use/purpose of Maven (POM.xml)  
+
+5) The Deployment happens through the Ansible Tower.-  More explination required when the session comes 
+
+6) The first step is ready artifact from Jfrog.
+
+Query) Ready means after Jenkins and Maven move to Jfrog.
+
+7) Now you need to move the artifacts from Dev to next enviornmnet .
+
+8) We have a concept of Gating, Where an approver used to approve the movement of artifact from dev to higher stages.
+
+Query) Generally who will approve the Gating in org ,you have mentioned the dev to higher stages means , Git hub to QA env -?
+
+9) Once the approval is done the artificat is deployed to any LLE ( Lowe level enviornments) through Ansible,funcational tests can ne run against the artifact.
+
+Query) Is it higher level or lower level env bcz DEV to QA and QA to PROD is higher level env
+
+10) After LLE the artifact can be moved to PROD through a gated approval 
+
+Understanding : After UAT and then approval move to PROD - can you confirm
+
+-------------------------------------------------------------------------------
+
+Overall flow for Jenkins:
+
+-Prebuild
+-Build
+-Post Build 
+Query - What is the use of Jenkins after post Build 
+
+- Approver once again approves the artificat to move to Production
+
+- Deployment happens to Production using Ansible.
+
+Query ) Even same is QA also not only in PROD 
+
+---------------------------------------------------------------
+
+DevOps
+
+-Maximize the time Spent colaborating with the business on Ideas.
+-Code/Test/Deploy is faster using Agile Methodology
+-Code and Solution can always be validated and automated.
+-Constantly able to build out new business features frequently.
+-Features / code are always "Production ready"
+Query: It is based on Org release planning like monthly or biweekley etc..-Please confirm
+
+----------------------------------------------------------------
+
+
+
