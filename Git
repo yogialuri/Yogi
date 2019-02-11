@@ -150,6 +150,47 @@ Git Push: git push origin <filename>
 
 - git push origin <branch name> pushes local branch into the origin
 
-Merge Conflicts
+- Merge Conflicts
+
+- git diff
+
+- git whatchanged
+
+
+Getting Started:
+
+- Two common senarios :- 
+
+	1. an existing project on your local machine, that you want to start tracking using git.
+	2. When ever there is an existing project that you want to start developing on.
+
+
+	############ Initialize Repository from existing code ##############
+
+		git init  (will initialize empty git repository)
+
+
+eg: locate the code base you want to start tracking using git   -ls
+
+	- you will see a .git directory
+	- This .git directory contains everything that relate to our repository
+
+Note: if we ever want to stop tracking our project with git, all we have to do is   ######  rm -rf .git #######
+
+- we are using git but we never commited anything.
+
+		" Before we commit "
+		
+		     git status
+
+- When we run git status you can see the untracked files.
+
+- on a personal computer you have files and you don't to add those files to the repository, so ignore those files for that you need to create ignore file.
+
+			touch .gitignore
+
+- which will create that .gitignore file.
+
+- gitignore file is just a simple text file, where we can add files that we want git ignore and we can also use wildcards.
 
 
